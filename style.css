@@ -1,0 +1,15 @@
+#div1 {
+    background-color: #663399;
+    width: 400px;
+    height: 250px;    
+}
+
+body {
+    background-color: #e34c26;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
