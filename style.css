@@ -1,7 +1,8 @@
-#div1 {
+#Game {
     background-color: #663399;
     width: 400px;
-    height: 250px;    
+    height: 250px;   
+    display: none; 
 }
 
 body {
