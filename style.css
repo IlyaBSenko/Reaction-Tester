@@ -1,4 +1,15 @@
 #Game {
+    /*
+    this div needs to contain the box, not be the box.
+    Have a seperate div inside game that is the actual colored box
+    */
+    background-color: #663399;
+    width: 400px;
+    height: 250px;   
+    display: none; 
+}
+
+#Game-Over {
     background-color: #663399;
     width: 400px;
     height: 250px;   
