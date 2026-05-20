@@ -1,10 +1,12 @@
 let gameState = 'Rules';
 
-let randomDelay = Math.random() * (10000 - 5000) + 5000;
-setTimeout(function() {
-    document.getElementById('Box').style.backgroundColor = '#f1e05a' 
-    gameState = 'Reacting';
-}, randomDelay);
+function startTimer() {
+    let randomDelay = Math.random() * (10000 - 5000) + 5000;
+    setTimeout(function() {
+        document.getElementById('Box').style.backgroundColor = '#f1e05a' 
+        gameState = 'Reacting';
+    }, randomDelay);
+}
 
 document.addEventListener('keydown', function(e) {
     if (e.code === 'Space') {
@@ -13,8 +15,8 @@ document.addEventListener('keydown', function(e) {
             gameState = 'Waiting';
             document.getElementById('Rules').style.display = 'none';
             document.getElementById('Game').style.display = 'flex';
+            startTimer();
         } else if (gameState === 'Waiting') {
-            setTimeout();
         } else if (gameState === 'Reacting') {
             gameState = 'Game-Over';
             document.getElementById('Game').style.display = 'none';
@@ -23,6 +25,8 @@ document.addEventListener('keydown', function(e) {
             gameState = 'Waiting';
             document.getElementById('Game-Over').style.display = 'none';
             document.getElementById('Game').style.display = 'flex';
+            document.getElementById('Box').style.backgroundColor = '#663399';
+            startTimer();
         }
     }
 })
