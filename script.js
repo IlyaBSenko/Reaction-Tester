@@ -1,5 +1,11 @@
 let gameState = 'Rules';
 
+let randomDelay = Math.random() * (10000 - 5000) + 5000;
+setTimeout(function() {
+    document.getElementById('Box').style.backgroundColor = '#f1e05a' 
+    gameState = 'Reacting';
+}, randomDelay);
+
 document.addEventListener('keydown', function(e) {
     if (e.code === 'Space') {
         console.log(gameState) // debug
@@ -8,7 +14,7 @@ document.addEventListener('keydown', function(e) {
             document.getElementById('Rules').style.display = 'none';
             document.getElementById('Game').style.display = 'flex';
         } else if (gameState === 'Waiting') {
-            // wait for box to change color
+            setTimeout();
         } else if (gameState === 'Reacting') {
             gameState = 'Game-Over';
             document.getElementById('Game').style.display = 'none';

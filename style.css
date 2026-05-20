@@ -8,7 +8,7 @@
 }
 
 #Box {
-    background-color: #663399;
+    background-color: #663399; 
     width: 400px;
     height: 250px; 
 }
@@ -23,6 +23,14 @@
     position: absolute;
     top: 10px;
     left: 10px;
+}
+
+#Game-Over h1 {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 body {
