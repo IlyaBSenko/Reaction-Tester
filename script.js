@@ -1,7 +1,7 @@
 let gameState = 'Rules';
 
 function startTimer() {
-    let randomDelay = Math.random() * (10000 - 5000) + 5000;
+    let randomDelay = Math.random() * (5000 - 5000) + 5000;
     setTimeout(function() {
         document.getElementById('Box').style.backgroundColor = '#f1e05a' 
         gameState = 'Reacting';
