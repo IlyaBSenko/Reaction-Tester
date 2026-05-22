@@ -22,7 +22,7 @@ document.addEventListener('keydown', function(e) {
         } else if (gameState === 'Waiting') {
         } else if (gameState === 'Reacting') {
             let reactionTime = performance.now() - colorChangeTime;
-            console.log(reactionTime);
+            document.getElementById('reaction-time-display').textContent = `Reaction Speed: ${reactionTime.toFixed(2)} ms`;
             gameState = 'Game-Over';
             document.getElementById('Game').style.display = 'none';
             document.getElementById('Game-Over').style.display = 'block';
