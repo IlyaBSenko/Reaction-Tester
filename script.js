@@ -11,6 +11,9 @@ function startTimer() {
     }, randomDelay);
 }
 
+// add a 'too early' feature to stop users from spamming
+// add mobile support
+
 document.addEventListener('keydown', function(e) {
     if (e.code === 'Space') {
         console.log(gameState) // debug
