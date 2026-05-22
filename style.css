@@ -14,8 +14,8 @@
 }
 
 #Game-Over {
-    width: 400px;
-    height: 250px;   
+    width: 100%;
+    height: 100vh;   
     display: none; 
 }
 
@@ -23,6 +23,13 @@
     position: absolute;
     top: 10px;
     left: 10px;
+}
+
+#Game h4, #Game-Over h4 {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #Game-Over h1 {
