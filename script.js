@@ -11,8 +11,10 @@ function startTimer() {
     }, randomDelay);
 }
 
+// TODO
 // add a 'too early' feature to stop users from spamming
 // add mobile support
+// add reset high score button
 
 document.addEventListener('keydown', function(e) {
     if (e.code === 'Space') {
